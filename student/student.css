@@ -1,51 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-BoldItalic.ttf);
 }
 
-.container {
-    margin-top: 60px !important;
-    padding-top: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+@font-face {
+    font-family: nunito;
+    src: url(nunito.regular.ttf);
 }
 
-#form_addclass {
-    margin: 0px auto;
-}
-
-.container h4 {
-    padding-left: 35px !important;
-}
-
-#addclassform {
-    margin: 0px auto;
-    margin-top: 40px;
+#signupform {
+    background-color: rgb(51, 49, 49);
+    /* background-color: rgb(28, 28, 92); */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 16px;
+    width: 600px;
+    height: max-content;
+    margin: 50px auto;
     padding: 10px;
-    height: 300px;
 }
 
-table tr td {
-    padding-left: 25px;
-}
-
-#btnaddclass button {
-    border: 1px solid black;
-    border-radius: 3px;
-    width: 40%;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color: #122A5C;
+#signupinput>p {
+    font-size: 20px;
     color: white;
-    border: none;
-}
-#btnaddclass button:hover {
-    transform: translateY(1px);
+    font-family: sans-serif;
 }
 
-#assignCourse {
-    width: 220px;
-    border-radius: 3px;
+#signupinput>label {
+    font-size: 20px;
+    color: white;
+    font-family:nunito;
+}
+
+#signupinput {
+    padding: 10px;
+    /* margin-top: 3px; */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+#account>h3 {
+    font-family: nunito;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.inputs {
+    width: 85%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    background-color: rgb(51, 49, 49);
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-top: 1px;
+}
+
+.signupbutton {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signupbutton>input,
+.signupbutton>button {
+    background-color: rgb(51, 49, 49);
+    color: white;
+    width: 115px;
     height: 35px;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.signupbutton>input:active,
+.signupbutton>button:active {
+    background-color: white;
+    color: rgb(51, 49, 49);
+    font-weight: bold;
+    border: 2px solid rgb(51, 49, 49);
 }

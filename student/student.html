@@ -8,66 +8,32 @@
         <link rel="stylesheet" href="student.css">
     </head>
     <body>
-        <div class="container" style="height: max-content;border-radius:
-            6px;margin-top: 10px;padding: 60px;width: 50%;">
-            <h4><span style="border: 1px solid black;border-radius: 6px;padding:
-                    5px;">Add Class</span> <span
-                    style="float: right; vertical-align: super;">Saylani Mass IT
-                    Training Program</span></h4>
-            <hr>
-            <div id="form_addclass">
-                <table id="addclassform">
-                    <tr>
-                        <td>Class timming</td>
-                        <td><input type="text" id="classtime"></td>
-                        <td>Shedule Of class</td>
-                        <td><select name="" id="shedule">
-                                <option disabled>Select Shedule</option>
-                                <option value="Monday - Wednesday - Friday">Monday
-                                    - Wednesday - Friday</option>
-                                <option value="Tuesday - Thursday - Saturday">Tuesday
-                                    - Thursday - Saturday</option>
-                                <option value="Weekend">Weekend</option>
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td>Teachers Name</td>
-                        <td><select id="teachername">
-                                <option disabled>Select Teacher</option>
-                                <option value="Sir Ghous">Sir Ghous</option>
-                                <option value="Sir Suleiman">Sir Suleiman</option>
-                                <option value="Sir Haider">Sir Haider</option>
-                            </select></td>
-                        <td>Course name</td>
-                        <td><select name="" id="coursename">
-                                <option disabled>Select Course</option>
-                                <option value="Web and mobile">Web and mobile</option>
-                                <option value="Graphic Design">Graphic Design</option>
-                            </select></td>
-
-                    </tr>
-                    <tr>
-                        <td>Section name</td>
-                        <td><select id="section" style="width: 200px;">
-                                <option disabled>Select Section</option>
-                                <option value="a">A</option>
-                                <option value="b">B</option>
-                                <option value="c">C</option>
-                                <option value="d">D</option>
-                            </select></td>
-                        <td>Batch Number</td>
-                        <td><input type="number" id="batchnum"></td>
-                    </tr>
-                </table>
+        <div id="signupform">
+            <div id="account">
+                <h3>Create An Account</h3>
+                <hr>
             </div>
-
-
-            <div id="btnaddclass">
-                <center><button id="addthisclass">Add Class</button>&nbsp;
-                    &nbsp; &nbsp;<button id="backtohome">Back To
-                        home</button></center>
+            <div id="signupinput">
+                <label for="">Enter Your Name:</label><br>
+                <input class="inputs" type="text" id="name" placeholder="Enter Your Name"><br>
+                <label for="">Enter Your Father Name:</label><br>
+                <input class="inputs" type="text" id="fname" placeholder="Enter Your Father Name"><br>
+                <label for="">Enter Your Roll no:</label><br>
+                <input class="inputs" type="number" id="roll" placeholder="Enter Your Roll no"><br>
+                <label for="">Enter Your Contact no:</label><br>
+                <input class="inputs" type="number" id="contact" placeholder="Enter Your Contact no"><br>
+                <label for="">Enter Your CNIC :</label><br>
+                <input class="inputs" type="number" id="cnic" placeholder="Enter Your CNIC "><br>
+                <label for="">Enter Your Course:</label><br>
+                <input class="inputs" type="text" id="course" placeholder="Enter Your Course"><br>
+            </div>
+            <div class="signupbutton">
+                <input type="button" id="back" onclick="back()"
+                    value="Back">
+                <input type="button" id="submit" onclick="submit()"
+                    value="Sumbit">
             </div>
         </div>
-        <script src="../dashboard/dashboard.js"></script>
+        <script type="module" src="student.js"></script>
     </body>
 </html>

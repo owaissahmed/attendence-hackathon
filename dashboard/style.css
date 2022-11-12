@@ -8,9 +8,13 @@
     src: url(nunito.regular.ttf);
 }
 
+.main {
+    margin-top: 20px;
+}
+
 #buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -30,7 +34,7 @@
     width: 200px;
     height: 200px;
     border-radius: 30px;
-    margin: 70px;
+    margin: 150px;
     margin-top: 40px;
     margin-bottom: 20px;
     background-color: white;
