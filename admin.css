@@ -1,18 +1,28 @@
 @font-face {
-    font-family: ninito;
+    font-family: nunito;
     src: url(nunito.regular.ttf);
 }
 
-#admin_{
+@font-face {
+    font-family: balo;
+    src: url(BalooBhai-Regular.ttf);
+}
+
+body {
+    background-color: rgb(51, 49, 49);
+}
+
+#admin_ {
     text-align: center;
-font-family: nunito;
+    font-family: nunito;
+    color: white;
 }
 
 .form_section {
     /* display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; */
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 50px;
 }
 
@@ -35,13 +45,15 @@ input {
     width: 410px;
     height: 45px;
     padding-left: 20px;
-    border: 1px solid #8dc666;
+    /* border: 1px solid #8dc666; */
     border-radius: 5px;
-
+    border: transparent;
+    font-family: nunito;
+    font-weight: bold;
 }
 
 p {
-    color: #0562a8;
+    color: white;
     font-family: nunito;
     font-weight: bold;
 }
@@ -51,19 +63,28 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     margin: 30px;
-    /* font-family: nunito; */
-    /* background-color: khaki; */
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+
+.inputs {
+    font-family: nunito;
+    font-size: 15px;
+    letter-spacing: 2px;
+    /* background-color: magenta; */
+    color: rgb(51, 49, 49);
 }
 
 input:focus {
     outline: none;
-    border: 1px solid #0562a8;
+    /* border: 1px solid #0562a8; */
     transition: 0.5s;
+    font-family: nunito;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 input::placeholder {
-    color: #d3d3ee;
+    color: grey;
 }
 
 input:hover {

@@ -1,0 +1,49 @@
+* {
+    background-color: rgb(51, 49, 49);
+    ;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(nunito.regular.ttf);
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.folder {
+    display: flex;
+    justify-content: center;
+}
+
+.folder>p {
+    color: white;
+    font-family: nunito;
+    font-size: 30px;
+    
+}
+
+.btns {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 70px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    font-family: nunito;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.btns:hover {
+    transform: scale(1.1);
+    transition: 0.5s
+        /* transform: scale(0.5) translate(-100%, -100%) */
+}

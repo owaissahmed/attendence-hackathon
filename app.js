@@ -40,9 +40,30 @@ login.addEventListener("click", async function () {
 
   if (docSnap.exists()) {
     if (
-      lemail == docSnap.data().email && lpassword == docSnap.data().password) {
-      window.open("admin.html");
+      lemail == docSnap.data().email &&
+      lpassword == docSnap.data().password
+    ) {
+      window.open("../dashboard/dashboard.html", "_self");
+    } else if (lemail != docSnap.data().email) {
+      Swal.fire({
+        icon: "error",
+        title: "ERROR",
+        text: "Email is Incorrect",
+        iconColor: "red",
+        background: "black",
+        color: "whitesmoke",
+      });
+    } else if (lpassword != docSnap.data().password) {
+      Swal.fire({
+        icon: "error",
+        title: "ERROR",
+        text: "Password is Incorrect",
+        iconColor: "red",
+        background: "black",
+        color: "whitesmoke",
+      });
     }
+
     console.log("Document data:", docSnap.data());
   } else {
     // doc.data() will be undefined in this case
