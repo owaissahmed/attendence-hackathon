@@ -1,0 +1,122 @@
+@font-face {
+    font-family: nunito;
+    src: url(nunito.regular.ttf);
+}
+
+@font-face {
+    font-family: balo;
+    src: url(BalooBhai-Regular.ttf);
+}
+
+body {
+    background-color: rgb(51, 49, 49);
+}
+
+#admin_ {
+    text-align: center;
+    font-family: nunito;
+    color: white;
+    padding-top: 30px;
+}
+
+.form_section {
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    /* background-color: #fff; */
+    padding: 50px;
+}
+
+
+.data {
+    margin: 0px 10px;
+}
+
+
+p {
+    color: white;
+    font-family: nunito;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+
+
+
+.data > select {
+    /* background-color:#0562a8; */
+    width: 410px;
+    height: 45px;
+    padding-left: 20px;
+    /* border: 1px solid #8dc666; */
+    border-radius: 5px;
+    border: transparent;
+    font-family: nunito;
+    font-weight: bold;
+}
+
+.data > select:focus {
+    border: none;
+    outline: none;
+}
+
+p {
+    margin: 5px;
+}
+
+.buttons {
+    display: flex;
+    /* background-color: limegreen; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 20px; */
+}
+
+#back,#done {
+    background-color: rgb(51, 49, 49);;
+    width: 100px;
+    color:white;
+    height: 50px;
+    margin-right: 10px;
+    border: 2px solid wheat;
+    outline: none;
+    font-family: nunito;
+    font-weight: bold ;
+    font-size: 20px;
+}
+
+#back:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+        /* transform: scale(0.5) translate(-100%, -100%) */
+}
+
+#done:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+        /* transform: scale(0.5) translate(-100%, -100%) */
+}
+/* media qurey */
+
+@media only screen and (max-width: 400px) {
+    img {
+        width: 300px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .input {
+        margin: 10px;
+    }
+}

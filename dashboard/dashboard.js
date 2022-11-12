@@ -1,3 +1,6 @@
 function abc() {
-    window.open("../admin.html", "_self")
+    window.open("../class.html", "_self")
+}
+function student() {
+    window.open("../student/student.html", "_self")
 }

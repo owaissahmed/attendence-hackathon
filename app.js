@@ -45,10 +45,10 @@ login.addEventListener("click", async function () {
     ) {
       window.open("../dashboard/dashboard.html", "_self");
     } else if (lemail != docSnap.data().email) {
-      Swal.fire({
+     Swal.fire({
         icon: "error",
         title: "ERROR",
-        text: "Email is Incorrect",
+        text: "Password is Incorrect",
         iconColor: "red",
         background: "black",
         color: "whitesmoke",
